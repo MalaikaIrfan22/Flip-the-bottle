@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Bottle Flipping Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1 id="game-title">Bottle Flipping Game</h1>
+      <button id="customize-btn">Customize</button>
+    </header>
+
+    <!-- Customization Modal -->
+    <div id="customization-modal" class="modal">
+      <div class="modal-content">
+        <h2>Customize Your Game</h2>
+        <label for="game-name">Game Name:</label>
+        <input type="text" id="game-name" placeholder="Enter game name">
+        
+        <label for="theme-color">Select Color Theme:</label>
+        <input type="color" id="theme-color" value="#4CAF50">
+        
+        <label for="button-style">Button Style:</label>
+        <select id="button-style">
+          <option value="round">Round</option>
+          <option value="square">Square</option>
+        </select>
+        
+        <button id="apply-changes">Apply Changes</button>
+        <button id="close-modal">Close</button>
+      </div>
+    </div>
+
+    <div id="bottle-container" class="game-container">
+      <div id="score">Score: 0</div>
+      <div id="level">Level: 1</div>
+      <div id="canvas" class="canvas">
+        <!-- Dynamic canvas will be here -->
+      </div>
+      <button id="flip-btn">Flip Bottle</button>
+    </div>
+
+    <div id="ads-container">
+      <div id="ad-space">Advertisement Space</div>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
